@@ -10,7 +10,6 @@ $(document).ready(() => {
 });
 
 
-z
 function carrousel(){
     $('.carrousel').each((index, element) => {
         let current = 0;
