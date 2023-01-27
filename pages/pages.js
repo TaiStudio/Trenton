@@ -16,12 +16,10 @@ function Pages({page}){
     const router = useRouter()
     const { id } = router.asPath.replace('/', '');
 
-    console.log(router);
-
-    if(page == null){
+    if(page === null){
         page = id;
     }
-    if(page == ''){
+    if(page === ''){
         page = id;
     }
 
