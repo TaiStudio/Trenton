@@ -1,0 +1,111 @@
+{
+    "name": "BriceStabileau",
+    "favicon": "https://res.cloudinary.com/orchidee/image/upload/v1670613994/PP_e0e24786fb.png",
+    "template": "default",
+    "colors": [],
+    "content": [
+        {
+            "title": "BriceStabileau",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component": "image",
+                    "url": "https://res.cloudinary.com/orchidee/image/upload/v1670613994/PP_e0e24786fb.png",
+                    "text": "Image de profile",
+                    "mode": "circle center",
+                    "width": "500px"
+                },
+                {
+ 
+                    "buttons": [
+                        {
+                            "text": "Discord",
+                            "url": "https://lyna.netlify.app/bricestabileau"
+                        },
+                        {
+                            "text": "Mes Reseaux",
+                            "url": "https://lyna.netlify.app/bricestabileau",
+                            "mode": "gold"
+                        },
+                        {
+                            "text": "Youtube",
+                            "url": "https://lyna.netlify.app/bricestabileau"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "👤 Identité",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "text",
+                    "text": "Salut à tous,\nJe suis Brice, jeune créateur indépendant.\nJe recherche des serveurs pour lequel travailler et faire des petites maps.\nPartez du principe que mon travail est payant en fonction du travail demandé le prix varie.\nMalheureusement il y a beaucoup de mon travail qui date et que je n'ai pas pu récupérer donc vous n'avez que mon travail récent dans se porte-folio."
+                },
+                {
+                    "component" : "button",
+                    "text": "Mes Reseaux",
+                    "url": "https://lyna.netlify.app/bricestabileau"
+                }
+            ]
+        },
+        {
+            "title": "⚒ Builder",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "text",
+                    "text": "Je construis en solo depuis 2015, je me suis mis sérieuse à travailler pour des serveurs en 2020.\nJ'ai construis pour des serveurs et des survies privés.\nActuellement je suis admin et builder sur le serveur OceanQuest."
+                }
+            ]
+        },
+        {
+            "title": "🖥 Numérique",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "text",
+                    "text": "Mon travail numérique n'est pas encore très compétent. Mais je travaille actuellement dessus tous les jours."
+                }
+            ]
+        },
+        {
+            "title": "🖌 IRL",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "text",
+                    "text": "Mon travail IRL n'est présent ici que pour garder une trace de ce que je fais.\nJe fais actuellement des études en arts."
+                }
+            ]
+        },
+        {
+            "title": "🔗Liens",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "text",
+                    "text": "Tout mes liens sont la: {N'hésitez pas à aller voir mon TikTok il y a quelques build sympa}"
+                },
+                {
+                    "component" : "button",
+                    "text": "Mes Reseaux",
+                    "url": "https://lyna.netlify.app/bricestabileau"
+                }
+            ]
+        }
+    ]
+}

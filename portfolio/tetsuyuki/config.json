@@ -1,0 +1,182 @@
+{
+    "name": "Tai Tetsuyuki",
+    "favicon": "https://lyna.netlify.app/pages/la_chaine_de_tai/la_chaine_de_tai.png",
+    "template": "default",
+    "colors": [],
+    "content": [
+        {
+            "title": "About",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "text",
+                    "text": "Hey there, This is Vipul Jha aka lordarcadius. I am an Android & Flutter developer who also works on ROMs, Kernels, & Scripts."
+                },
+                {
+                    "component" : "button",
+                    "text": "Github",
+                    "url": "https://github.com/LeGitHubDeTai"
+                }
+            ]
+        },
+        {
+            "title": "Projects",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "card",
+                    "title": "Brawlshoot",
+                    "description": "un jeu video",
+                    "background": [
+                        "",
+                        "https://brawlshoot-tai-studio.netlify.app/images/bakground.png"
+                    ],
+                    "buttons": [
+                        {
+                            "text": "Voir",
+                            "url": "https://brawlshoot-tai-studio.netlify.app/"
+                        },
+                        {
+                            "text": "Don",
+                            "url": "https://lyna.netlify.app/taistudiodonate",
+                            "mode": "gold"
+                        }
+                    ]
+                },
+                {
+                    "component" : "card",
+                    "title": "IO",
+                    "background": [
+                        "https://io-tai-studio.netlify.app/images/title-sheet0.png"
+                    ],
+                    "buttons": [
+                        {
+                            "text": "Voir",
+                            "url": "https://io-tai-studio.netlify.app/"
+                        },
+                        {
+                            "text": "Don",
+                            "url": "https://lyna.netlify.app/taistudiodonate",
+                            "mode": "gold"
+                        }
+                    ]
+                },
+                {
+                    "component" : "card",
+                    "title": "Animeback",
+                    "background": [
+                        "https://github.com/LeGitHubDeTai/AnimeBack/blob/main/assets/images/logo%20white2.png?raw=true"
+                    ],
+                    "buttons": [
+                        {
+                            "text": "Voir",
+                            "url": "https://animeback-tai-studio.netlify.app/"
+                        },
+                        {
+                            "text": "Don",
+                            "url": "https://lyna.netlify.app/taistudiodonate",
+                            "mode": "gold"
+                        }
+                    ]
+                },
+                {
+                    "component" : "card",
+                    "title": "Orchidee",
+                    "background": [
+                        "https://res.cloudinary.com/orchidee/image/upload/v1670776967/favicon_5637ad71f2.png"
+                    ],
+                    "buttons": [
+                        {
+                            "text": "Voir",
+                            "url": "https://orchidee-tai-studio.netlify.app/"
+                        },
+                        {
+                            "text": "Don",
+                            "url": "https://lyna.netlify.app/taistudiodonate",
+                            "mode": "gold"
+                        }
+                    ]
+                },
+                {
+                    "component" : "card",
+                    "title": "Sofia",
+                    "background": [
+                        "https://raw.githubusercontent.com/TaiStudio/Sofia/main/LOGO_SOFIA.png"
+                    ],
+                    "buttons": [
+                        {
+                            "text": "Voir",
+                            "url": "https://github.com/TaiStudio/Sofia"
+                        },
+                        {
+                            "text": "Don",
+                            "url": "https://lyna.netlify.app/taistudiodonate",
+                            "mode": "gold"
+                        }
+                    ]
+                },
+                {
+                    "component" : "card",
+                    "title": "Lyna",
+                    "background": [
+                        "https://lyna.netlify.app/pages/home/lyna.png"
+                    ],
+                    "buttons": [
+                        {
+                            "text": "Voir",
+                            "url": "https://lyna.netlify.app/"
+                        },
+                        {
+                            "text": "Don",
+                            "url": "https://lyna.netlify.app/taistudiodonate",
+                            "mode": "gold"
+                        }
+                    ]
+                },
+                {
+                    "component" : "card",
+                    "title": "Asterius",
+                    "background": [
+                        "https://lyna.netlify.app/pages/asterius/background.png"
+                    ],
+                    "buttons": [
+                        {
+                            "text": "Voir",
+                            "url": "https://lyna.netlify.app/asterius"
+                        },
+                        {
+                            "text": "Don",
+                            "url": "https://lyna.netlify.app/taistudiodonate",
+                            "mode": "gold"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Skills",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "card",
+                    "title": "HTML",
+                    "background": [
+                        "https://lyna.netlify.app/pages/home/lyna.png"
+                    ],
+                    "buttons": [
+                        {
+                            "text": "HTML",
+                            "url": "/"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
