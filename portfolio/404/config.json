@@ -20,7 +20,7 @@
                 },
                 {
                     "component" : "text",
-                    "text": "404 not found, il semblerait que ce portfolio n'existe pas."
+                    "text": "404 not found,\nil semblerait que ce portfolio n'existe pas."
                 },
                 {
                     "component" : "button",
