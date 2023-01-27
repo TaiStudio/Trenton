@@ -5,7 +5,7 @@
     "colors": [],
     "content": [
         {
-            "title": "Preston",
+            "title": "Trenton",
             "content": [
                 {
                     "component" : "separator"
@@ -27,7 +27,7 @@
                 },
                 {
                     "component" : "text",
-                    "text": "Hey there, This is Preston."
+                    "text": "Hey there, This is Trenton."
                 },
                 {
                     "component" : "button",
