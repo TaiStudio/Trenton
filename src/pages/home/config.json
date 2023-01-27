@@ -1,0 +1,40 @@
+{
+    "name": "Home",
+    "favicon": "./logo512.png",
+    "template": "default",
+    "colors": [],
+    "content": [
+        {
+            "title": "Preston",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component": "image",
+                    "url": "/logo512.png",
+                    "text": "Image de profile",
+                    "mode": "circle center",
+                    "width": "500px"
+                }
+            ]
+        },
+        {
+            "title": "About",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "text",
+                    "text": "Hey there, This is Preston."
+                },
+                {
+                    "component" : "button",
+                    "text": "Github",
+                    "url": "https://github.com/LeGitHubDeTai"
+                }
+            ]
+        }
+    ]
+}
