@@ -1,23 +1,26 @@
-import React, {useEffect} from 'react';
+import { Helmet } from 'react-helmet';
+import React from 'react';
 import '../css/theme.css';
 
 const Header = ({ data }) => {
-    /*eslint-disable */
-    //suppress all warnings between comments
-    useEffect(() => {
-        const link = document.querySelector("link[rel*='icon']") || document.createElement('link');
-        link.type = 'image/x-icon';
-        link.rel = 'shortcut icon';
-        link.href = data.favicon;
-        document.getElementsByTagName('head')[0].appendChild(link);
-    }, []);
-    /*eslint-enable */
-
     return (
         <div className='d-hide'>
-            {
-                document.title = data.name
-            }
+            <Helmet>
+                {/* TITLE */}
+                <title>{data.name}</title>
+                <meta name="twitter:title" content={data.name} />
+                <meta property="og:title" content={data.name} />
+
+                {/* DESCRIPTION */}
+                <meta name="description" content={data.description} />
+                <meta property="og:description" content={data.description} />
+                <meta name="twitter:description" content={data.description} />
+
+                {/* FAVICON */}
+                <link rel="shortcut icon" href={data.favicon} type="image/x-icon"></link>
+                <meta property="og:image" content={data.favicon} />
+                <meta name="twitter:image" content={data.favicon} />
+            </Helmet>
         </div>
     )
 }

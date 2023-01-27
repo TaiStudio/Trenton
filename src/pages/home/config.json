@@ -1,6 +1,7 @@
 {
     "name": "Home",
     "favicon": "./logo512.png",
+    "description": "ceci est un test",
     "template": "default",
     "colors": [],
     "content": [
