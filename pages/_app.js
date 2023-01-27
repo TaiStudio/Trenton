@@ -11,8 +11,13 @@ import Pages from './pages';
 const App = () => {
     const router = useRouter();
 
+    console.log(router);
+
     var page = router.asPath.replace('/', '');
     if(page === ''){
+        page = 'home';
+    }
+    if(router.asPath === '/'){
         page = 'home';
     }
     

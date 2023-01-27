@@ -23,7 +23,7 @@ function Pages({page}){
     try {
         var data = require(`../portfolio/${page}/config.json`);
     } catch (error) {
-        var data = require('../portfolio/home/config.json');
+        var data = require('../portfolio/404/config.json');
     }
 
     return (

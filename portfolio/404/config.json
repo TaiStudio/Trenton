@@ -1,0 +1,33 @@
+{
+    "name": "Trenton | 404",
+    "favicon": "./logo512.png",
+    "description": "404 not found, il semblerait que ce portfolio n'existe pas.",
+    "template": "default",
+    "colors": [],
+    "content": [
+        {
+            "title": "404",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component": "image",
+                    "url": "/logo512.png",
+                    "text": "Image de profile",
+                    "mode": "circle center",
+                    "width": "500px"
+                },
+                {
+                    "component" : "text",
+                    "text": "404 not found, il semblerait que ce portfolio n'existe pas."
+                },
+                {
+                    "component" : "button",
+                    "text": "Retour",
+                    "url": "https://trenton.netlify.app"
+                }
+            ]
+        }
+    ]
+}
