@@ -21,6 +21,9 @@ function Pages({page}){
     if(page == null){
         page = id;
     }
+    if(page == ''){
+        page = id;
+    }
 
     try {
         var data = require(`../portfolio/${page}/config.json`);
@@ -30,7 +33,6 @@ function Pages({page}){
 
     return (
         <div className='content'>
-            {page}
             <Header data={data} key={0}></Header>
 
             {data.content.map((val, i) => {
