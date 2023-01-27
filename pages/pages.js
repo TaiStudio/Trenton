@@ -16,6 +16,8 @@ function Pages({page}){
     const router = useRouter()
     const { id } = router.asPath.replace('/', '');
 
+    console.log(router);
+
     if(page == null){
         page = id;
     }
