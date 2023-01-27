@@ -30,6 +30,7 @@ function Pages({page}){
 
     return (
         <div className='content'>
+            {page}
             <Header data={data} key={0}></Header>
 
             {data.content.map((val, i) => {
