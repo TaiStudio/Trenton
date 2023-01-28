@@ -36,7 +36,7 @@
                 {
                     "component" : "card",
                     "title": "Brawlshoot",
-                    "description": "un jeu video",
+                    "description": "Brawl Shoot est un jeu de plateforme arrivera tu a survivre longtemps ?\nDisponible sur toute les platformes, Android, IOS, Chrome, Firefox, Edge, Internet Explorer, Opera.",
                     "background": [
                         "",
                         "https://brawlshoot-tai-studio.netlify.app/images/bakground.png"
@@ -56,6 +56,7 @@
                 {
                     "component" : "card",
                     "title": "IO",
+                    "description": "IO est un shooter",
                     "background": [
                         "https://io-tai-studio.netlify.app/images/title-sheet0.png"
                     ],
@@ -74,6 +75,7 @@
                 {
                     "component" : "card",
                     "title": "Animeback",
+                    "description": "AnimeBack est un logiciel pour animer votre fond d'écrans, interagir avec ... Disponible sur Windows uniquement, très simple d'utilisation et surtout très léger",
                     "background": [
                         "https://github.com/LeGitHubDeTai/AnimeBack/blob/main/assets/images/logo%20white2.png?raw=true"
                     ],
@@ -92,6 +94,7 @@
                 {
                     "component" : "card",
                     "title": "Orchidee",
+                    "description": "L'équipe Orchidée est une communauté de streamers qui se réunit pour jouer à des jeux et organiser des événements. Fondée le 16 novembre 2020, l'équipe est composée de personnes passionnées par les jeux vidéo et les direct. Ils sont connus pour leur dynamisme et leur engagement envers leur communauté sur leurs chaînes Twitch.",
                     "background": [
                         "https://res.cloudinary.com/orchidee/image/upload/v1670776967/favicon_5637ad71f2.png"
                     ],
@@ -110,6 +113,7 @@
                 {
                     "component" : "card",
                     "title": "Sofia",
+                    "description": "Sofia est un logiciel pour personnaliser son status discord.",
                     "background": [
                         "https://raw.githubusercontent.com/TaiStudio/Sofia/main/LOGO_SOFIA.png"
                     ],
@@ -128,6 +132,7 @@
                 {
                     "component" : "card",
                     "title": "Lyna",
+                    "description": "Créer une page pour fournir vos liens sociaux et autres.",
                     "background": [
                         "https://lyna.netlify.app/pages/home/lyna.png"
                     ],
