@@ -28,12 +28,37 @@
                 },
                 {
                     "component" : "text",
-                    "text": "Hey there, This is Trenton."
+                    "text": "Hi, I am Trenton <code>1.0</code>.\nI am here to help you create your portfolio, resume or any other document.\nI am easy to use and without limits."
                 },
                 {
                     "component" : "button",
-                    "text": "Github",
-                    "url": "https://github.com/TaiStudio/Trenton"
+                    "text": "Get Started",
+                    "url": "https://github.com/TaiStudio/Trenton",
+                    "mode": "highlight"
+                }
+            ]
+        },
+        {
+            "title": "Wiki",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "text",
+                    "text": "Params:"
+                },
+                {
+                    "component" : "code",
+                    "code": "{\"name\": \"name of page\",\"favicon\": \"the icon of the page\",\"template\": \"choose one in list\",\"colors\": [\"not used\"],\"content\": [{\"title\": \"Skills\",\"content\": []}]}"
+                },
+                {
+                    "component" : "text",
+                    "text": "Component card:"
+                },
+                {
+                    "component": "code",
+                    "code": "{\"component\" : \"card\",\"title\": \"React\",\"background\": [\"https://lyna.netlify.app/pages/home/lyna.png\"],\"buttons\": [{\"text\": \"HTML\",\"url\": \"/\"}]}"
                 }
             ]
         }

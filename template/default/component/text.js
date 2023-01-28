@@ -7,6 +7,9 @@ function replaceAll(str, find, replace) {
 /*eslint-enable */
 
 function Text({text, mode}){
+    if(text === ''){
+        return(<></>);
+    }
     switch(mode){
         case 'title':
             return (

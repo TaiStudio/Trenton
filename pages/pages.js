@@ -8,6 +8,7 @@ import Img from '../template/default/component/img';
 import Button from '../template/default/component/button';
 import Card from '../template/default/component/card';
 import Bar from '../template/default/component/separator';
+import JSONBlock from '../template/default/component/code';
 
 import Footer from '../template/default/component/footer';
 
@@ -34,8 +35,17 @@ function Pages({page}){
             <Header data={data} key={0}></Header>
 
             {data.content.map((val, i) => {
+                var custom = {};
+                if(val.mode === "grid"){
+                    custom = {
+                        display: 'grid',
+                        gridTemplate: "'card card'",
+                        justifyContent: "center",
+                        gap: '1% 2%'
+                    };
+                }
                 return (
-                    <section key={i}>
+                    <section style={custom} key={i}>
                         <Text text={val.title} mode={"title"} key={1}></Text>
                         {
                             val.content.map((comp) => {
@@ -43,6 +53,10 @@ function Pages({page}){
                                     case 'separator':
                                         return (
                                             <Bar key={2}></Bar>
+                                        );
+                                    case 'code':
+                                        return (
+                                            <JSONBlock jsonData={JSON.parse(comp.code)} key={9}></JSONBlock>
                                         );
                                     case 'text':
                                         return (
@@ -80,12 +94,7 @@ function Pages({page}){
                                         );
                                     case 'card':
                                         return (
-                                            <div style={{
-                                                display: 'grid',
-                                                gap: '10px'
-                                            }} key={7}>
-                                                <Card data={comp}></Card>
-                                            </div>
+                                            <Card data={comp} key={7}></Card>
                                         );
                                     default:
                                         return (

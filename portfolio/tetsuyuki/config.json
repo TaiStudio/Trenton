@@ -5,14 +5,14 @@
     "colors": [],
     "content": [
         {
-            "title": "About",
+            "title": "À propos",
             "content": [
                 {
                     "component" : "separator"
                 },
                 {
                     "component" : "text",
-                    "text": "Hey there, This is Vipul Jha aka lordarcadius. I am an Android & Flutter developer who also works on ROMs, Kernels, & Scripts."
+                    "text": "Bonjour, Je m'appelle Tai Tetsuyuki\net je suis développeur Full-Stack."
                 },
                 {
                     "component" : "button",
@@ -22,11 +22,17 @@
             ]
         },
         {
-            "title": "Projects",
+            "title": "Projets",
             "content": [
                 {
                     "component" : "separator"
-                },
+                }
+            ]
+        },
+        {
+            "title": "",
+            "mode": "grid",
+            "content": [
                 {
                     "component" : "card",
                     "title": "Brawlshoot",
@@ -162,18 +168,92 @@
             "content": [
                 {
                     "component" : "separator"
-                },
+                }
+            ]
+        },
+        {
+            "title": "",
+            "mode": "grid",
+            "content": [
                 {
                     "component" : "card",
                     "title": "HTML",
                     "background": [
+                        "https://img.freepik.com/icones-gratuites/html-5_318-566077.jpg?w=2000"
+                    ],
+                    "buttons": [
+                    ]
+                },
+                {
+                    "component" : "card",
+                    "title": "CSS",
+                    "background": [
+                        "https://grafikart.fr/uploads/icons/css.svg"
+                    ],
+                    "buttons": [
+                    ]
+                },
+                {
+                    "component" : "card",
+                    "title": "JavaScript",
+                    "background": [
                         "https://lyna.netlify.app/pages/home/lyna.png"
                     ],
                     "buttons": [
-                        {
-                            "text": "HTML",
-                            "url": "/"
-                        }
+                    ]
+                },
+                {
+                    "component" : "card",
+                    "title": "JQuery",
+                    "background": [
+                        "https://lyna.netlify.app/pages/home/lyna.png"
+                    ],
+                    "buttons": [
+                    ]
+                },
+                {
+                    "component" : "card",
+                    "title": "PHP",
+                    "background": [
+                        "https://lyna.netlify.app/pages/home/lyna.png"
+                    ],
+                    "buttons": [
+                    ]
+                },
+                {
+                    "component" : "card",
+                    "title": "MySQL",
+                    "background": [
+                        "https://lyna.netlify.app/pages/home/lyna.png"
+                    ],
+                    "buttons": [
+                    ]
+                },
+                {
+                    "component" : "card",
+                    "title": "Java",
+                    "background": [
+                        "https://lyna.netlify.app/pages/home/lyna.png"
+                    ],
+                    "buttons": [
+                    ]
+                },
+                {
+                    "component" : "card",
+                    "title": "React",
+                    "background": [
+                        "https://lyna.netlify.app/pages/home/lyna.png"
+                    ],
+                    "buttons": [
+                    ]
+                },
+                {
+                    "component" : "card",
+                    "title": "TypeScript",
+                    "background": [
+                        "https://lyna.netlify.app/pages/home/lyna.png"
+                    ],
+                    "buttons": [
                     ]
                 }
             ]
