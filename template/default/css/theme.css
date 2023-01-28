@@ -1,17 +1,17 @@
-body{
+body {
     background-color: #262626;
     color: white;
 }
 
-body #__next{
+body #__next {
     display: flex;
 }
 
-.d-hide{
+.d-hide {
     display: none;
 }
 
-body .content{
+body .content {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@ body .content{
     width: 700px;
 }
 
-body .center{
+body .center {
     text-align: center;
 }
 
@@ -35,31 +35,148 @@ body .center{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-h2{
+h2 {
     color: white;
     font-size: 3em;
     margin: 0;
     margin-top: 2%;
 }
 
-h1{
+h1 {
     color: rgba(255, 255, 255, 0.5);
 }
 
-a{
+a {
     color: orangered;
+}
+
+.carousel-item img {
+    width: 100% !important;
+    height: 10% !important;
 }
 
 /* BUTTON MODE */
 .gold {
-    background: linear-gradient(to right, #ffc600, #ff9100)!important;
+    background: linear-gradient(to right, #ffc600, #ff9100) !important;
     border-radius: 10px;
     color: white;
     padding: 10px 20px;
     transition: 0.5s ease-in-out;
 }
-  
+
 .gold:hover {
-    background: linear-gradient(to left, #ffc600, #ff9100)!important;
+    background: linear-gradient(to left, #ffc600, #ff9100) !important;
     cursor: pointer;
+}
+
+.blue {
+    background: linear-gradient(270deg, rgb(19, 173, 199) 0%, rgb(148, 93, 214) 100%) !important;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    transition: 0.5s ease-in-out;
+    box-shadow: '0 3px 5px 2px rgba(255, 105, 135, .3)';
+}
+
+.blue:hover {
+    background: linear-gradient(-270deg, rgb(19, 173, 199) 0%, rgb(148, 93, 214) 100%) !important;
+    cursor: pointer;
+}
+
+body .separator {
+    background: linear-gradient(270deg, rgb(19, 173, 199) 0%, rgb(148, 93, 214) 100%);
+}
+
+body .link {
+    color: rgb(19, 173, 199);
+}
+
+.highlight {
+    color: white !important;
+    padding: 10px 20px !important;
+    border-radius: 5px !important;
+    font-size: 18px !important;
+    transition: box-shadow 0.3s ease-in-out !important;
+}
+
+.highlight:hover {
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5) !important;
+}
+
+
+
+
+
+
+
+
+
+
+.card {
+    width: 300px;
+    /* height: 340px; */
+    background-color: #121212;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-carousel {
+    width: 100%;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card-carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.card-divider {
+    width: 80%;
+    border: 1px solid gray;
+    margin: 0 auto;
+}
+
+.card-description {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.card-button {
+    width: 120px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.card-button-primary {
+    background-color: blue;
+    color: white;
+}
+
+.card-button:hover {
+    transform: scale(1.1);
 }
