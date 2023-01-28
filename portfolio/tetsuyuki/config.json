@@ -160,6 +160,24 @@
                             "mode": "gold"
                         }
                     ]
+                },
+                {
+                    "component" : "card",
+                    "title": "Trenton",
+                    "background": [
+                        "https://github.com/TaiStudio/Trenton/raw/main/public/logo512.png"
+                    ],
+                    "buttons": [
+                        {
+                            "text": "Voir",
+                            "url": "https://trenton.netlify.app"
+                        },
+                        {
+                            "text": "Don",
+                            "url": "https://lyna.netlify.app/taistudiodonate",
+                            "mode": "gold"
+                        }
+                    ]
                 }
             ]
         },
