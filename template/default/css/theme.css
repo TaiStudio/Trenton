@@ -129,6 +129,7 @@ body .link {
     display: flex;
     align-items: center;
     overflow: hidden;
+    background: #121228;
 }
 
 .card-carousel img {
