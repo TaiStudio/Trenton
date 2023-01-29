@@ -1,65 +1,44 @@
 import React from 'react';
-import Carousel from 'react-bootstrap/Carousel';
 
 import Button from './button';
 import Img from './img';
+
+function Image(data){
+    if(data.fontawesome != null){
+        return (
+            <i class={data.fontawesome.code} style={{
+                color: data.fontawesome.color
+            }}></i>
+        );
+    }
+    else{
+        return data.background.map((val) => {
+            return (
+                <Img data={{url: val, text: ''}}></Img>
+            );
+        });
+    }
+}
 
 function Card({data}) {
     if(data.background == null){
         data.background = [];
     }
 
-    // return (
-    //     <div style={{
-    //         width: '600px',
-    //         height: '400px',
-    //         background: '#16161675',
-    //         borderRadius: '10px',
-    //         boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.2)',
-    //         padding: '20px',
-    //         textAlign: 'center',
-    //     }}>
-    //         <Carousel>
-    //             {data.background.map((val) => {
-    //                 return (
-    //                     <Carousel.Item>
-    //                         <Img data={{url: val, text: ''}}></Img>
-    //                     </Carousel.Item>
-    //                 )
-    //             })}
-    //         </Carousel>
-    //         <h2 style={{
-    //             marginTop: '20px',
-    //             fontSize: 'bold'
-    //         }}>{data.title}</h2>
-    //         <hr style={{
-    //             borderTop: '1px solid #ccc',
-    //             margin: '10px 0'
-    //         }}/>
-    //         <p style={{
-    //             fontSize: '18px',
-    //             lineHeight: '1.5',
-    //             marginBottom: '20px'
-    //         }}>
-    //             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    //             Integer posuere erat a ante.
-    //         </p>
-    //         {data.buttons.map((val) => {
-    //             return (
-    //                 <Button data={val}></Button>
-    //             )
-    //         })}
-    //     </div>
-    // )
+    if(data.mode == null){
+        data.mode = "default";
+    }
+
+    if(data.buttons == null){
+        data.buttons = [];
+    }
 
     return (
-        <div class="card">
+        <div class={`card ${data.mode}`}>
             <div class="card-carousel">
-                {data.background.map((val) => {
-                    return (
-                        <Img data={{url: val, text: ''}}></Img>
-                    )
-                })}
+                {
+                    Image(data)
+                }
             </div>
             <h2 class="card-title">{data.title}</h2>
             <hr class="card-divider" />

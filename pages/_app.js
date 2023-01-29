@@ -2,6 +2,9 @@ import './index.css';
 
 import '../template/default/css/theme.css';
 
+// FONTAWESOME
+import './fontawesome/css/all.css';
+
 import React from 'react';
 import { useRouter } from 'next/router';
 
@@ -17,6 +20,12 @@ const App = () => {
     if(router.asPath === '/'){
         page = 'home';
     }
+
+    // try {
+    //     require(`../template/${page}/css/theme.css`);
+    // } catch (error) {
+    //     require('../template/default/css/theme.css');
+    // }
     
     return <Pages page={page}/>
 }

@@ -50,11 +50,6 @@ a {
     color: orangered;
 }
 
-.carousel-item img {
-    width: 100% !important;
-    height: 10% !important;
-}
-
 /* BUTTON MODE */
 .gold {
     background: linear-gradient(to right, #ffc600, #ff9100) !important;
@@ -106,13 +101,8 @@ body .link {
 
 
 
-
-
-
-
-
-
-.card {
+/* DEFAULT CARD START */
+.card.default {
     width: 300px;
     /* height: 340px; */
     background-color: #121212;
@@ -123,7 +113,7 @@ body .link {
     flex-direction: column;
 }
 
-.card-carousel {
+.card.default .card-carousel {
     width: 100%;
     height: 170px;
     display: flex;
@@ -132,38 +122,40 @@ body .link {
     background: #121228;
 }
 
-.card-carousel img {
+.card.default .card-carousel img,
+.card.default .card-carousel i {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    font-size: 3.7em;
 }
 
-.card-title {
+.card.default .card-title {
     font-size: 24px;
     font-weight: bold;
     margin: 20px;
 }
 
-.card-divider {
+.card.default .card-divider {
     width: 80%;
     border: 1px solid gray;
     margin: 0 auto;
 }
 
-.card-description {
+.card.default .card-description {
     font-size: 16px;
     line-height: 1.5;
     padding: 0 20px;
     margin-bottom: 20px;
 }
 
-.card-buttons {
+.card.default .card-buttons {
     display: flex;
     justify-content: center;
     margin-bottom: 5%;
 }
 
-.card-button {
+.card.default .card-button {
     width: 120px;
     padding: 10px 20px;
     border-radius: 20px;
@@ -173,11 +165,63 @@ body .link {
     transition: all 0.2s ease-in-out;
 }
 
-.card-button-primary {
+.card.default .card-button-primary {
     background-color: blue;
     color: white;
 }
 
-.card-button:hover {
+.card.default .card-button:hover {
     transform: scale(1.1);
+}
+
+/* DEFAULT CARD END */
+
+/* MINIFY CARD START */
+.card.minify {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+        "image title"
+        "divider divider"
+        "description description"
+        "buttons buttons";
+    align-items: start;
+    margin: 20px;
+    height: fit-content;
+}
+
+.card.minify .card-carousel {
+    grid-area: image;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.card.minify .card-carousel img,
+.card.minify .card-carousel i {
+    width: 100%;
+    height: auto;
+    font-size: 3.7em;
+}
+
+.card.minify .card-title {
+    grid-area: title;
+    margin: 0;
+}
+
+.card.minify .card-divider {
+    grid-area: divider;
+    margin: 10px 0;
+}
+
+.card.minify .card-description {
+    grid-area: description;
+    margin: 10px 0;
+}
+
+.card.minify .card-buttons {
+    grid-area: buttons;
+    display: flex;
+    justify-content: flex-start;
 }
