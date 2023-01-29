@@ -52,7 +52,7 @@ function Pages({page}){
                                 switch(comp.component){
                                     case 'separator':
                                         return (
-                                            <Bar key={2}></Bar>
+                                            <Bar data={comp} key={2}></Bar>
                                         );
                                     case 'code':
                                         return (
