@@ -18,7 +18,7 @@
                     "width": "500px"
                 },
                 {
- 
+                    "component": "buttons",
                     "buttons": [
                         {
                             "text": "Discord",
