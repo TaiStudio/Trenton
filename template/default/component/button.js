@@ -30,7 +30,8 @@ function Button({data}) {
                 height: 48,
                 padding: '0 30px',
                 cursor: 'pointer',
-                background: data.color
+                background: data.color,
+                fontSize: '18px'
             }} className={data.mode}>{data.text}</button>
         </a>
     );
