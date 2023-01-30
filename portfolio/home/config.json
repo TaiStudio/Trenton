@@ -28,7 +28,7 @@
                 },
                 {
                     "component" : "text",
-                    "text": "Hi, I am Trenton <code>1.5</code>.\nI am here to help you create your portfolio, resume or any other document.\nI am easy to use and without limits."
+                    "text": "Hi, I am Trenton <code>1.8</code>.\nI am here to help you create your portfolio, resume or any other document.\nI am easy to use and without limits."
                 },
                 {
                     "component" : "button",
@@ -50,6 +50,7 @@
                 },
                 {
                     "component" : "code",
+                    "lang": "json",
                     "code": "{\"name\": \"name of page\",\"favicon\": \"the icon of the page\",\"template\": \"choose one in list\",\"colors\": [\"not used\"],\"content\": [{\"title\": \"Skills\",\"content\": []}]}"
                 },
                 {
@@ -58,6 +59,7 @@
                 },
                 {
                     "component": "code",
+                    "lang": "json",
                     "code": "{\"component\" : \"card\",\"title\": \"React\",\"background\": [\"https://lyna.netlify.app/pages/home/lyna.png\"],\"buttons\": [{\"text\": \"HTML\",\"url\": \"/\"}]}"
                 }
             ]
