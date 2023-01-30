@@ -1,0 +1,385 @@
+{
+    "name": "Wiki Trenton",
+    "favicon": "/logo512.png",
+    "template": "default",
+    "content": [
+        {
+            "title": "",
+            "content": [
+                {
+                    "component" : "separator",
+                    "mode": "invisible"
+                },
+                {
+                    "component": "image",
+                    "url": "/logo512.png",
+                    "text": "Image de profile",
+                    "mode": "circle center",
+                    "width": "500px"
+                }
+            ]
+        },
+        {
+            "title": "Introduction",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "text",
+                    "text": "Bienvenue dans le projet Trenton!\nCe tutoriel vous montrera comment créer votre propre page Trenton."
+                },
+                {
+                    "component" : "button",
+                    "text": "Demo",
+                    "url": "/",
+                    "mode": "highlight"
+                }
+            ]
+        },
+        {
+            "title": "",
+            "content": [
+                {
+                    "component" : "separator",
+                    "mode": "invisible"
+                }
+            ]
+        },
+        {
+            "title": "Sommaire",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "list",
+                    "mode": "summary",
+                    "content": [
+                        "Prérequis",
+                        "Installation",
+                        "Utilisation",
+                        "Paramètres",
+                        "Résultats attendus",
+                        "Résolution des problèmes",
+                        "Conclusion"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "",
+            "content": [
+                {
+                    "component" : "separator",
+                    "mode": "invisible"
+                }
+            ]
+        },
+        {
+            "title": "Prérequis",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "text",
+                    "text": "Avant de commencer, assurez-vous d'avoir les outils suivants:"
+                },
+                {
+                    "component" : "list",
+                    "content": [
+                        "Git",
+                        "Éditeur de texte"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "",
+            "content": [
+                {
+                    "component" : "separator",
+                    "mode": "invisible"
+                }
+            ]
+        },
+        {
+            "title": "Installation",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "list",
+                    "mode": "number",
+                    "content": [
+                        "Forker le projet Trenton sur GitHub.",
+                        "Clonez le projet forké sur votre ordinateur local en utilisant la commande suivante:"
+                    ]
+                },
+                {
+                    "component" : "code",
+                    "lang": "bash",
+                    "code": "git clone https://github.com/YOUR_USERNAME/trenton.git"
+                },
+                {
+                    "component" : "list",
+                    "mode": "number",
+                    "start": 2,
+                    "content": [
+                        "Créez un répertoire nommé <code>YOUR_PAGE_NAME</code> dans le répertoire <code>portfolio</code>.",
+                        "Créez un fichier nommé <code>config.json</code> à l'intérieur du répertoire <code>YOUR_PAGE_NAME</code> et personnalisez-le avec les paramètres suivants:"
+                    ]
+                },
+                {
+                    "component" : "code",
+                    "lang": "json",
+                    "code": "{\"title\": \"YOUR_PAGE_TITLE\",\"description\": \"YOUR_PAGE_DESCRIPTION\"}"
+                }
+            ]
+        },
+        {
+            "title": "",
+            "content": [
+                {
+                    "component" : "separator",
+                    "mode": "invisible"
+                }
+            ]
+        },
+        {
+            "title": "Utilisation",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "text",
+                    "text": "Faites une demande de tirage (pull request) au dépôt original de Trenton avec vos modifications."
+                },
+                {
+                    "component" : "text",
+                    "text": "Une fois votre demande de tirage acceptée, ouvrez votre navigateur web et accédez à <code>https://trenton.netlify.app/YOUR_PAGE_NAME</code>."
+                },
+                {
+                    "component" : "text",
+                    "text": "Profitez de votre nouvelle page Trenton!"
+                },
+                {
+                    "component" : "button",
+                    "text": "Fork",
+                    "url": "https://docs.github.com/fr/get-started/quickstart/fork-a-repo"
+                },
+                {
+                    "component" : "button",
+                    "text": "Pull Request",
+                    "url": "https://docs.github.com/fr/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request"
+                }
+            ]
+        },
+        {
+            "title": "",
+            "content": [
+                {
+                    "component" : "separator",
+                    "mode": "invisible"
+                }
+            ]
+        },
+        {
+            "title": "Paramètres",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "text",
+                    "text": "Les paramètres requis pour le fichier <code>config.json</code> sont:"
+                },
+                {
+                    "component": "list",
+                    "content": [
+                        "title: Le titre de votre page",
+                        "description: La description de votre page"
+                    ]
+                },
+                
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "text",
+                    "text": "Le code de base:"
+                },
+                {
+                    "component" : "code",
+                    "lang": "json",
+                    "code": "{\"name\": \"name of page\",\"favicon\": \"the icon of the page\",\"template\": \"choose one in list\",\"colors\": [\"not used\"],\"content\": [{\"title\": \"Skills\",\"content\": []}]}"
+                },
+
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "text",
+                    "text": "Composant <code>Separateur</code>:"
+                },
+                {
+                    "component": "code",
+                    "lang": "json",
+                    "code": "{\"component\" : \"separator\",\"mode\": \"invisible\", \"height\": \"10px\"}"
+                },
+
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "text",
+                    "text": "Composant <code>Texte</code>:"
+                },
+                {
+                    "component": "code",
+                    "lang": "json",
+                    "code": "{\"component\" : \"text\",\"text\": \"votre text\",\"mode\": \"title\"}"
+                },
+
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "text",
+                    "text": "Composant <code>Image</code>:"
+                },
+                {
+                    "component": "code",
+                    "lang": "json",
+                    "code": "{\"component\": \"image\",\"url\": \"https://lyna.netlify.app/pages/home/lyna.png\",\"text\": \"Image de profile\",\"mode\": \"circle center\",\"width\": \"500px\"}"
+                },
+
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "text",
+                    "text": "Composant <code>Carte</code>:"
+                },
+                {
+                    "component": "code",
+                    "lang": "json",
+                    "code": "{\"component\" : \"card\",\"title\": \"React\",\"background\": [\"https://lyna.netlify.app/pages/home/lyna.png\"],\"buttons\": [{\"text\": \"HTML\",\"url\": \"/\"}]}"
+                },
+
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "text",
+                    "text": "Composant <code>Liste</code>:"
+                },
+                {
+                    "component": "code",
+                    "lang": "json",
+                    "code": "{\"component\" : \"list\",\"mode\": \"summary\",\"content\": [\"ligne 1\",\"ligne 2\"]}"
+                },
+
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "text",
+                    "text": "Composant <code>Bouton</code>:"
+                },
+                {
+                    "component": "code",
+                    "lang": "json",
+                    "code": "{\"component\" : \"button\",\"text\": \"Demo\",\"url\": \"https://trenton.netlify.app/tetsuyuki\",\"mode\": \"highlight\"}"
+                },
+
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "text",
+                    "text": "Composant <code>Boutons</code>:"
+                },
+                {
+                    "component": "code",
+                    "lang": "json",
+                    "code": "{\"component\": \"buttons\",\"buttons\": [{\"text\": \"Trenton\",\"url\": \"https://trenton.netlify.app\",\"mode\": \"gold\"},{\"text\": \"Youtube\",\"url\": \"https://youtube.com\"}]}"
+                }
+            ]
+        },
+        {
+            "title": "",
+            "content": [
+                {
+                    "component" : "separator",
+                    "mode": "invisible"
+                }
+            ]
+        },
+        {
+            "title": "Résultats attendus",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "text",
+                    "text": "Lorsque vous avez suivi les étapes d'installation correctement, vous devriez être en mesure de visualiser votre propre page Trenton en accédant à <code>https://trenton.netlify.app/YOUR_PAGE_NAME</code>."
+                }
+            ]
+        },
+        {
+            "title": "",
+            "content": [
+                {
+                    "component" : "separator",
+                    "mode": "invisible"
+                }
+            ]
+        },
+        {
+            "title": "Résolution des problèmes",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "text",
+                    "text": "Si vous rencontrez des problèmes lors de la création de votre page Trenton, vérifiez les points suivants:"
+                },
+                {
+                    "component": "list",
+                    "content": [
+                        "Vérifiez que vous avez suivi les étapes d'installation correctement.",
+                        "Vérifiez que le fichier <code>config.json</code> contient les bons paramètres et est bien formaté.",
+                        "Si vous rencontrez des erreurs de syntaxe, utilisez un outil de validation JSON pour les identifier."
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "",
+            "content": [
+                {
+                    "component" : "separator",
+                    "mode": "invisible"
+                }
+            ]
+        },
+        {
+            "title": "Conclusion",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "text",
+                    "text": "C'est tout!\nVous avez maintenant votre propre page Trenton.\nN'hésitez pas à la personnaliser davantage pour répondre à vos besoins.\nNous espérons que ce tutoriel vous sera utile et que vous apprécierez l'utilisation de Trenton!"
+                }
+            ]
+        }
+    ]
+}
