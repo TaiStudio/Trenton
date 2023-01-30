@@ -20,6 +20,12 @@ const App = () => {
     if(router.asPath === '/'){
         page = 'home';
     }
+    if(page != null){
+        page = page.split('#');
+    }
+    if(typeof page == "object"){
+        page = page[0];
+    }
 
     // try {
     //     require(`../template/${page}/css/theme.css`);

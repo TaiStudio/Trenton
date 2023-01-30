@@ -16,7 +16,15 @@ import Footer from '../template/default/component/footer';
 function Pages({page}){
 
     const router = useRouter()
-    const { id } = router.asPath.replace('/', '');
+    var { id } = router.asPath.replace('/', '');
+
+    if(id != null){
+        id = id.split('#');
+    }
+
+    if(typeof id == "object"){
+        id = id[0];
+    }
 
     if(page === null){
         page = id;

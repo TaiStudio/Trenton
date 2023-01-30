@@ -1,5 +1,20 @@
 import React from 'react';
 
+function filter(mode, text, style){
+    if(mode == "summary"){
+        return (
+            <a href={`#${text}`}>
+                <li style={style} dangerouslySetInnerHTML={{__html: text}}></li>
+            </a>
+        );
+    }
+    else {
+        return (
+            <li style={style} dangerouslySetInnerHTML={{__html: text}}></li>
+        );
+    }
+}
+
 function List({data}) {
 
     var style = {};
@@ -8,6 +23,8 @@ function List({data}) {
         case 'number':
             style = {listStyle: 'decimal'};
             break;
+        case 'summary':
+            break;
         default:
             style = {};
     }
@@ -15,9 +32,7 @@ function List({data}) {
     return (
         <ul>
             {data.content.map((val) => {
-                return (
-                    <li style={style} dangerouslySetInnerHTML={{__html: val}}></li>
-                );
+                return filter(data.mode, val, style)
             })}
         </ul>
     );
