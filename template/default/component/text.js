@@ -13,7 +13,7 @@ function Text({text, mode}){
     switch(mode){
         case 'title':
             return (
-                <h2>{text}</h2>
+                <h2 id={text}>{text}</h2>
             )
         default:
             return (
