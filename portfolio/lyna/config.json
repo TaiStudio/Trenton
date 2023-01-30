@@ -265,7 +265,7 @@
                 },
                 {
                     "component" : "text",
-                    "text": "Si vous rencontrez des problèmes lors de l'installation ou de l'utilisation de la page Lyna, veuillez consulter la documentation du projet sur Github ou poser des questions sur le canal de support associé."
+                    "text": "Si vous rencontrez des problèmes lors de la création de votre page, vous pouvez consulter la documentation du projet sur <code>https://doc-lyna.netlify.app</code> ou soumettre un bug sur Github à l'adresse <code>https://github.com/TaiStudio/Lyna/issues</code>."
                 }
             ]
         },
