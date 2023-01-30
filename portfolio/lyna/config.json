@@ -12,7 +12,7 @@
                 },
                 {
                     "component": "image",
-                    "url": "https://lyna.netlify.app/pages/home/lyna.png",
+                    "url": "https://lyna.netlify.app/img/egg/00584-4215438925.png",
                     "text": "Image de profile",
                     "mode": "circle center",
                     "width": "500px"
@@ -32,7 +32,7 @@
                 {
                     "component" : "button",
                     "text": "Demo",
-                    "url": "https://trenton.netlify.app/tetsuyuki",
+                    "url": "https://lyna.netlify.app",
                     "mode": "highlight"
                 }
             ]
