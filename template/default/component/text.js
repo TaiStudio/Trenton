@@ -13,7 +13,9 @@ function Text({text, mode}){
     switch(mode){
         case 'title':
             return (
-                <h2 id={text}>{text}</h2>
+                <a href="#">
+                    <h2 id={text}>{text}</h2>
+                </a>
             )
         default:
             return (

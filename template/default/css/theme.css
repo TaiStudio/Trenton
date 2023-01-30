@@ -53,6 +53,10 @@ h1, li {
 }
 
 a {
+    color: transparent;
+}
+
+ul a {
     color: orangered;
 }
 
