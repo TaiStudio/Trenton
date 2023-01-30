@@ -182,6 +182,7 @@
                         "logo: Le chemin vers le logo de votre page",
                         "font: La police d'écriture utilisée sur votre page",
                         "background: Le chemin vers l'image d'arrière-plan de votre page",
+                        "backgroundV: Le chemin vers la vidéo d'arrière-plan de votre page (Optionnel)",
                         "icon: Le chemin vers l'icône de votre page",
                         "links: Un tableau d'objets représentant les liens à afficher sur votre page. "
                     ]
