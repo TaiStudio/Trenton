@@ -226,7 +226,6 @@
                 },
                 {
                     "component" : "card",
-                    "mode": "minify",
                     "title": "Trenton",
                     "background": [
                         "https://github.com/TaiStudio/Trenton/raw/main/public/logo512.png"
