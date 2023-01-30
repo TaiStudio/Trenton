@@ -6,6 +6,7 @@ import Header from '../template/default/component/header';
 import Text from '../template/default/component/text';
 import Img from '../template/default/component/img';
 import Button from '../template/default/component/button';
+import List from '../template/default/component/list';
 import Card from '../template/default/component/card';
 import Bar from '../template/default/component/separator';
 import JSONBlock from '../template/default/component/code';
@@ -54,9 +55,13 @@ function Pages({page}){
                                         return (
                                             <Bar data={comp} key={2}></Bar>
                                         );
+                                    case 'list':
+                                        return (
+                                            <List data={comp} key={10} />
+                                        );
                                     case 'code':
                                         return (
-                                            <JSONBlock jsonData={JSON.parse(comp.code)} key={9}></JSONBlock>
+                                            <JSONBlock data={comp} key={9}></JSONBlock>
                                         );
                                     case 'text':
                                         return (
