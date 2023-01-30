@@ -1,0 +1,294 @@
+{
+    "name": "Wiki Lyna",
+    "favicon": "https://lyna.netlify.app/pages/home/lyna.png",
+    "template": "default",
+    "content": [
+        {
+            "title": "",
+            "content": [
+                {
+                    "component" : "separator",
+                    "mode": "invisible"
+                },
+                {
+                    "component": "image",
+                    "url": "https://lyna.netlify.app/pages/home/lyna.png",
+                    "text": "Image de profile",
+                    "mode": "circle center",
+                    "width": "500px"
+                }
+            ]
+        },
+        {
+            "title": "Introduction",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "text",
+                    "text": "Bienvenue dans le guide d'installation de la page Lyna.\nCette documentation vous fournira les étapes nécessaires pour créer votre propre page Lyna personnalisée.\nCréer une page pour fournir et rassembler vos liens sociaux et autres."
+                },
+                {
+                    "component" : "button",
+                    "text": "Demo",
+                    "url": "https://trenton.netlify.app/tetsuyuki",
+                    "mode": "highlight"
+                }
+            ]
+        },
+        {
+            "title": "",
+            "content": [
+                {
+                    "component" : "separator",
+                    "mode": "invisible"
+                }
+            ]
+        },
+        {
+            "title": "Sommaire",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "list",
+                    "mode": "summary",
+                    "content": [
+                        "Prérequis",
+                        "Installation",
+                        "Utilisation",
+                        "Paramètres",
+                        "Résultats attendus",
+                        "Résolution des problèmes",
+                        "Conclusion"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "",
+            "content": [
+                {
+                    "component" : "separator",
+                    "mode": "invisible"
+                }
+            ]
+        },
+        {
+            "title": "Prérequis",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "list",
+                    "content": [
+                        "Un compte Github",
+                        "Un ordinateur avec npm installé"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "",
+            "content": [
+                {
+                    "component" : "separator",
+                    "mode": "invisible"
+                }
+            ]
+        },
+        {
+            "title": "Installation",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "list",
+                    "mode": "number",
+                    "content": [
+                        "Commencez par forker le projet sur Github.",
+                        "Clonez le projet sur votre ordinateur local en utilisant la commande git clone.",
+                        "Ouvrez le dossier du projet sur votre ordinateur et exécutez la commande <code>npm install</code> pour installer les dépendances requises.",
+                        "Exécutez la commande <code>npm run gui</code> pour démarrer l'interface graphique.",
+                        "Créez une demande de tirage pour intégrer vos modifications au projet."
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "",
+            "content": [
+                {
+                    "component" : "separator",
+                    "mode": "invisible"
+                }
+            ]
+        },
+        {
+            "title": "Utilisation",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "list",
+                    "mode": "number",
+                    "content": [
+                        "Ouvrez votre navigateur web et accédez à l'adresse <code>https://lyna.netlify.app/YOUR_USER_NAME</code> pour visualiser votre page.",
+                        "Créez un fichier json avec les paramètres spécifiques pour personnaliser votre page."
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "",
+            "content": [
+                {
+                    "component" : "separator",
+                    "mode": "invisible"
+                }
+            ]
+        },
+        {
+            "title": "Paramètres",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "text",
+                    "text": "Les paramètres requis pour personnaliser votre page incluent des informations telles que votre nom d'utilisateur, le titre de votre page, la description de votre page, etc."
+                },
+                {
+                    "component" : "code",
+                    "lang": "json",
+                    "code": "{\"name\":\"Home\",\"description\":\"Create a page for provide your social links and other.\",\"logo\":\"pages/home/lyna.png\",\"font\":\"ancient\",\"background\":\"pages/home/homeback.png\",\"icon\":\"https://raw.githubusercontent.com/TaiStudio/Lyna/main/pages/taistudio/taistudio.png\",\"links\":[{\"name\":\"Donate/Support\",\"service\":\"buymeacoffee\",\"link\":\"https://lyna.netlify.app/taistudiodonate\"},{\"name\":\"How to create/edit my own page ?\",\"service\":\"Internet\",\"link\":\"https://doc-lyna.netlify.app\",\"icon\":\"pages/home/add.png\"},{\"name\":\"I have found a bug ! (github)\",\"service\":\"Internet\",\"link\":\"https://github.com/TaiStudio/Lyna/issues\",\"icon\":\"pages/home/bug.png\"},{\"name\":\"I have found a bug ! (discord)\",\"service\":\"Internet\",\"link\":\"https://github.com/TaiStudio/Lyna/issues\",\"icon\":\"pages/home/bug.png\",\"display\":false},{\"name\":\"I have an idea !\",\"service\":\"Internet\",\"link\":\"https://github.com/TaiStudio/Lyna/discussions/categories/ideas\",\"icon\":\"pages/home/idea.png\"},{\"name\":\"Github\",\"service\":\"Github\",\"link\":\"https://github.com/TaiStudio\"},{\"name\":\"Tai Studio\",\"service\":\"Internet\",\"link\":\"https://lyna.netlify.app/taistudio\",\"icon\":\"https://raw.githubusercontent.com/TaiStudio/Lyna/main/pages/taistudio/taistudio.png\"}]}"
+                },
+                {
+                    "component": "list",
+                    "content": [
+                        "name: Le nom de votre page",
+                        "description: Une description de votre page",
+                        "logo: Le chemin vers le logo de votre page",
+                        "font: La police d'écriture utilisée sur votre page",
+                        "background: Le chemin vers l'image d'arrière-plan de votre page",
+                        "icon: Le chemin vers l'icône de votre page",
+                        "links: Un tableau d'objets représentant les liens à afficher sur votre page. "
+                    ]
+                },
+                {
+                    "component" : "text",
+                    "text": "Chaque objet contient les propriétés suivantes:"
+                },
+                {
+                    "component": "list",
+                    "content": [
+                        "name: Le nom du lien",
+                        "service: Le nom du service associé au lien",
+                        "link: L'URL du lien",
+                        "icon: Le chemin vers l'icône associée au lien",
+                        "display: Une option pour activer ou désactiver l'affichage du lien"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "",
+            "content": [
+                {
+                    "component" : "separator",
+                    "mode": "invisible"
+                }
+            ]
+        },
+        {
+            "title": "Résultats attendus",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "text",
+                    "text": "Après avoir suivi les étapes décrites dans ce guide, vous devriez être en mesure de visualiser votre page Lyna personnalisée en accédant à l'adresse <code>https://lyna.netlify.app/YOUR_USER_NAME</code> dans votre navigateur web."
+                },
+                {
+                    "component": "image",
+                    "url": "https://raw.githubusercontent.com/TaiStudio/Lyna/main/img/assets/taistudio.png",
+                    "text": "Demo Lyna: Tai Studio",
+                    "mode": "center",
+                    "width": "500px"
+                },
+                {
+                    "component" : "separator",
+                    "mode": "invisible",
+                    "height": "0"
+                },
+                {
+                    "component": "image",
+                    "url": "https://raw.githubusercontent.com/TaiStudio/Lyna/main/img/assets/potion.png",
+                    "text": "Demo Lyna: Potion",
+                    "mode": "center",
+                    "width": "500px"
+                },
+                {
+                    "component" : "separator",
+                    "mode": "invisible",
+                    "height": "0"
+                },
+                {
+                    "component": "image",
+                    "url": "https://raw.githubusercontent.com/TaiStudio/Lyna/main/img/assets/Lyna%20demo.PNG",
+                    "text": "Demo Lyna: Lyna",
+                    "mode": "center",
+                    "width": "500px"
+                }
+            ]
+        },
+        {
+            "title": "",
+            "content": [
+                {
+                    "component" : "separator",
+                    "mode": "invisible"
+                }
+            ]
+        },
+        {
+            "title": "Résolution des problèmes",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "text",
+                    "text": "Si vous rencontrez des problèmes lors de l'installation ou de l'utilisation de la page Lyna, veuillez consulter la documentation du projet sur Github ou poser des questions sur le canal de support associé."
+                }
+            ]
+        },
+        {
+            "title": "",
+            "content": [
+                {
+                    "component" : "separator",
+                    "mode": "invisible"
+                }
+            ]
+        },
+        {
+            "title": "Conclusion",
+            "content": [
+                {
+                    "component" : "separator"
+                },
+                {
+                    "component" : "text",
+                    "text": "Nous espérons que ce guide vous a aidé à créer votre propre page Lyna personnalisée.\nSi vous avez des questions ou des commentaires, n'hésitez pas à nous les faire part.\nBonne chance avec votre nouvelle page Lyna!"
+                }
+            ]
+        }
+    ]
+}
