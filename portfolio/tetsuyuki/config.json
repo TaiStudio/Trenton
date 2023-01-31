@@ -1,6 +1,6 @@
 {
     "name": "Tai Tetsuyuki",
-    "favicon": "https://lyna.netlify.app/pages/la_chaine_de_tai/la_chaine_de_tai.png",
+    "favicon": "https://lyna.netlify.app/pages/tai_tetsuyuki/tai_tetsuyuki.png",
     "template": "default",
     "colors": [],
     "content": [
@@ -13,7 +13,7 @@
                 },
                 {
                     "component": "image",
-                    "url": "https://lyna.netlify.app/pages/la_chaine_de_tai/la_chaine_de_tai.png",
+                    "url": "https://lyna.netlify.app/pages/tai_tetsuyuki/tai_tetsuyuki.png",
                     "text": "Image de profile",
                     "mode": "circle center",
                     "width": "500px"
