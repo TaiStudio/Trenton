@@ -1,10 +1,11 @@
-import { Helmet } from 'react-helmet';
+// import { Helmet } from 'react-helmet';
 import React from 'react';
+import Head from 'next/head';
 
 const Header = ({ data }) => {
     return (
         <div className='d-hide'>
-            <Helmet>
+            <Head>
                 {/* TITLE */}
                 <title>{data.name}</title>
                 <meta name="twitter:title" content={data.name} />
@@ -19,7 +20,7 @@ const Header = ({ data }) => {
                 <link rel="shortcut icon" href={data.favicon} type="image/x-icon"></link>
                 <meta property="og:image" content={data.favicon} />
                 <meta name="twitter:image" content={data.favicon} />
-            </Helmet>
+            </Head>
         </div>
     )
 }
