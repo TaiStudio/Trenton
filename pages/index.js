@@ -13,6 +13,16 @@ import JSONBlock from '../template/default/component/code';
 
 import Footer from '../template/default/component/footer';
 
+function load(page){
+    try {
+        return require(`../portfolio/${page}/config.json`);
+    } catch (error) {
+        if(error != null){
+            return require('../portfolio/404/config.json');
+        }
+    }
+}
+
 function Pages({page}){
 
     const router = useRouter()
@@ -33,13 +43,7 @@ function Pages({page}){
         page = id;
     }
 
-    try {
-        var data = require(`../portfolio/${page}/config.json`);
-    } catch (error) {
-        if(error != null){
-            var data = require('../portfolio/404/config.json');
-        }
-    }
+    var data = load(page);
 
     return (
         <div className='content'>
