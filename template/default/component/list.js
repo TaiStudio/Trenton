@@ -4,13 +4,13 @@ function filter(mode, text, style, key){
     if(mode == "summary"){
         return (
             <a href={`#${text}`}>
-                <li style={style} dangerouslySetInnerHTML={{__html: text}} key={`list${key}`}></li>
+                <li style={style} dangerouslySetInnerHTML={{__html: text}} key={`lit${key}`}></li>
             </a>
         );
     }
     else {
         return (
-            <li style={style} dangerouslySetInnerHTML={{__html: text}} key={`list${key}`}></li>
+            <li style={style} dangerouslySetInnerHTML={{__html: text}} key={`lit${key}`}></li>
         );
     }
 }
