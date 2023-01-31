@@ -114,6 +114,22 @@
                 },
                 {
                     "component" : "card",
+                    "title": "github-to-discord",
+                    "description": "Create an link to Discord from GitHub Release Notes.",
+                    "buttons": [
+                        {
+                            "text": "Voir",
+                            "url": "https://github.com/LeGitHubDeTai/github-to-discord"
+                        },
+                        {
+                            "text": "Don",
+                            "url": "https://lyna.netlify.app/taistudiodonate",
+                            "mode": "gold"
+                        }
+                    ]
+                },
+                {
+                    "component" : "card",
                     "title": "Orchidee",
                     "description": "L'équipe Orchidée est une communauté de streamers qui se réunit pour jouer à des jeux et organiser des événements. Fondée le 16 novembre 2020, l'équipe est composée de personnes passionnées par les jeux vidéo et les direct. Ils sont connus pour leur dynamisme et leur engagement envers leur communauté sur leurs chaînes Twitch.",
                     "background": [
@@ -208,6 +224,21 @@
                 },
                 {
                     "component" : "card",
+                    "title": "ScreenWebSite",
+                    "buttons": [
+                        {
+                            "text": "Voir",
+                            "url": "https://github.com/LeGitHubDeTai/ScreenWebSite"
+                        },
+                        {
+                            "text": "Don",
+                            "url": "https://lyna.netlify.app/taistudiodonate",
+                            "mode": "gold"
+                        }
+                    ]
+                },
+                {
+                    "component" : "card",
                     "title": "Macrogiciel",
                     "background": [
                         "https://avatars.githubusercontent.com/u/106665248?s=200&v=4"
@@ -216,6 +247,21 @@
                         {
                             "text": "Voir",
                             "url": "https://macrogiciel.github.io"
+                        },
+                        {
+                            "text": "Don",
+                            "url": "https://lyna.netlify.app/taistudiodonate",
+                            "mode": "gold"
+                        }
+                    ]
+                },
+                {
+                    "component" : "card",
+                    "title": "Quiche Lorraine",
+                    "buttons": [
+                        {
+                            "text": "Voir",
+                            "url": "https://twitter.com/tetsuyuquiche"
                         },
                         {
                             "text": "Don",
