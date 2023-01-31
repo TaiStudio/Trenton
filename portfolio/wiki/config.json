@@ -1,6 +1,6 @@
 {
     "name": "Wiki Trenton",
-    "favicon": "/logo512.png",
+    "favicon": "https://trenton.netlify.app/logo512.png",
     "template": "default",
     "content": [
         {
