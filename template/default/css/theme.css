@@ -21,6 +21,7 @@ body .content {
     background-color: #262626;
     padding-left: 2%;
     padding-right: 2%;
+    min-height: 961px;
 }
 
 body .center {
