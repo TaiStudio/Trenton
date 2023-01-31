@@ -4,13 +4,13 @@ function filter(mode, text, style, key){
     if(mode == "summary"){
         return (
             <a href={`#${text}`}>
-                <li style={style} dangerouslySetInnerHTML={{__html: text}} key={key}></li>
+                <li style={style} dangerouslySetInnerHTML={{__html: text}} key={`list${key}`}></li>
             </a>
         );
     }
     else {
         return (
-            <li style={style} dangerouslySetInnerHTML={{__html: text}} key={key}></li>
+            <li style={style} dangerouslySetInnerHTML={{__html: text}} key={`list${key}`}></li>
         );
     }
 }
@@ -30,7 +30,7 @@ function List({data}) {
     }
 
     return (
-        <ul>
+        <ul key={`l${data.content.length}`}>
             {data.content.map((val, i) => {
                 return filter(data.mode, val, style, i);
             })}

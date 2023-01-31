@@ -61,23 +61,23 @@ function Pages({page}){
                                 switch(comp.component){
                                     case 'separator':
                                         return (
-                                            <Bar data={comp} key={2}></Bar>
+                                            <Bar data={comp} key={`sep${i}`}></Bar>
                                         );
                                     case 'list':
                                         return (
-                                            <List data={comp} key={10} />
+                                            <List data={comp} key={`lists${i}`} />
                                         );
                                     case 'code':
                                         return (
-                                            <JSONBlock data={comp} key={9}></JSONBlock>
+                                            <JSONBlock data={comp} key={`code${i}`}></JSONBlock>
                                         );
                                     case 'text':
                                         return (
-                                            <Text text={comp.text} mode={"default"} key={3} />
+                                            <Text text={comp.text} mode={"default"} key={`txt${i}`} />
                                         );
                                     case 'button':
                                         return (
-                                            <Button data={comp} mode={"default"} key={4} />
+                                            <Button data={comp} mode={"default"} key={`btn${i}`} />
                                         );
                                     case 'buttons':
                                         return (
@@ -87,7 +87,7 @@ function Pages({page}){
                                             }} key={5}>
                                                 {comp.buttons.map((val, i) => {
                                                     return (
-                                                        <Button data={val} mode={"default"} key={`b${i}`}/>
+                                                        <Button data={val} mode={"default"} key={`btns${i}`}/>
                                                     )
                                                 })}
                                             </div>
@@ -101,17 +101,17 @@ function Pages({page}){
                                             };
                                         }
                                         return (
-                                            <div style={custom} key={6}>
+                                            <div style={custom} key={`img${i}`}>
                                                 <Img data={comp} />
                                             </div>
                                         );
                                     case 'card':
                                         return (
-                                            <Card data={comp} key={7}></Card>
+                                            <Card data={comp} key={`card${i}`}></Card>
                                         );
                                     default:
                                         return (
-                                            <Text text={comp.title} mode={"title"} key={8} />
+                                            <Text text={comp.title} mode={"title"} key={`txt${i}`} />
                                         );
                                 }
                             })
