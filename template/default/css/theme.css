@@ -1,5 +1,5 @@
 body {
-    background-color: #262626;
+    background-color: #121212;
     color: white;
 }
 
@@ -17,6 +17,10 @@ body .content {
     flex-direction: column;
     margin: 0 auto;
     width: 700px;
+    box-shadow: #262626 0 0 15px;
+    background-color: #262626;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 body .center {

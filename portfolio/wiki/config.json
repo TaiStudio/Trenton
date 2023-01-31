@@ -328,6 +328,13 @@
                 {
                     "component" : "text",
                     "text": "Lorsque vous avez suivi les étapes d'installation correctement, vous devriez être en mesure de visualiser votre propre page Trenton en accédant à <code>https://trenton.netlify.app/YOUR_PAGE_NAME</code>."
+                },
+                {
+                    "component": "image",
+                    "url": "/wiki/trenton.png",
+                    "text": "Demo Trenton",
+                    "mode": "center",
+                    "width": "500px"
                 }
             ]
         },
