@@ -17,7 +17,7 @@ function Pages({page}){
 
     const router = useRouter()
     var { id } = router.asPath.replace('/', '');
-
+    
     if(id != null){
         id = id.split('#');
     }
@@ -36,7 +36,9 @@ function Pages({page}){
     try {
         var data = require(`../portfolio/${page}/config.json`);
     } catch (error) {
-        var data = require('../portfolio/404/config.json');
+        if(error != null){
+            var data = require('../portfolio/404/config.json');
+        }
     }
 
     return (

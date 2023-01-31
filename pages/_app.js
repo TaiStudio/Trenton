@@ -8,7 +8,7 @@ import './fontawesome/css/all.css';
 import React from 'react';
 import { useRouter } from 'next/router';
 
-import Pages from './pages';
+import Pages from './index';
 
 const App = () => {
     const router = useRouter();
