@@ -15,7 +15,6 @@
     "dev": "next dev",
     "build": "npm-run-all build:*",
     "build:build": "next build",
-    "build2:static": "next export",
     "build:redirect": "cp _redirects ./.next/_redirects",
     "start": "next start",
     "lint": "next lint",
