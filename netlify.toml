@@ -7,6 +7,6 @@
 
 [[redirects]]
   from = "/:user"
-  to = "/index.html"
+  to = "/:user"
   status = 200
   force = true
