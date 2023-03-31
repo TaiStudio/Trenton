@@ -30,7 +30,7 @@ function List({data}) {
     }
 
     return (
-        <ul key={`l${data.content.length}`}>
+        <ul key={`l${Date.now()}${data.content.length}`}>
             {data.content.map((val, i) => {
                 return filter(data.mode, val, style, i);
             })}

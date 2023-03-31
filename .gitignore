@@ -25,3 +25,5 @@ yarn-error.log*
 .next
 demo/
 out
+# Local Netlify folder
+.netlify
