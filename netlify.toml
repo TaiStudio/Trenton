@@ -9,4 +9,4 @@
   from = "/:user"
   to = "/index.html"
   status = 200
-  force = false
+  force = true
