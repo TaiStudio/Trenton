@@ -14,8 +14,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "npm-run-all build:*",
-    "build:build": "next export",
-    "build:static": "next build",
+    "build:build": "next build",
+    "build:static": "next export",
     "start": "next start",
     "lint": "next lint",
     "export": "next export"
