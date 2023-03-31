@@ -34,6 +34,12 @@
                     "text": "Demo",
                     "url": "/",
                     "mode": "highlight"
+                },
+                {
+                    "component" : "button",
+                    "text": "Github",
+                    "url": "https://github.com/TaiStudio/Trenton",
+                    "mode": "gold"
                 }
             ]
         },

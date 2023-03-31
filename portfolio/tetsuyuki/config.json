@@ -149,6 +149,25 @@
                 },
                 {
                     "component" : "card",
+                    "title": "Timer",
+                    "description": "Préparez-vous pour un streaming réussi avec ce timer de début de stream ! Gardez une durée de pré-stream constante pour accueillir votre audience avec professionnalisme. #streaming #débutdestream",
+                    "background": [
+                        "https://raw.githubusercontent.com/TaiStudio/Sofia/main/LOGO_SOFIA.png"
+                    ],
+                    "buttons": [
+                        {
+                            "text": "Voir",
+                            "url": "https://timer-taistudio.netlify.app/"
+                        },
+                        {
+                            "text": "Don",
+                            "url": "https://lyna.netlify.app/taistudiodonate",
+                            "mode": "gold"
+                        }
+                    ]
+                },
+                {
+                    "component" : "card",
                     "title": "Sofia",
                     "description": "Sofia est un logiciel pour personnaliser son status discord.",
                     "background": [
