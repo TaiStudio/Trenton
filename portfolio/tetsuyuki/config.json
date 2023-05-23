@@ -306,6 +306,24 @@
                             "mode": "gold"
                         }
                     ]
+                },
+                {
+                    "component" : "card",
+                    "title": "Vextree",
+                    "background": [
+                        "https://raw.githubusercontent.com/TaiStudio/Trenton/main/public/tetsuyuki/vextree.png"
+                    ],
+                    "buttons": [
+                        {
+                            "text": "Voir",
+                            "url": "https://vextree.netlify.app"
+                        },
+                        {
+                            "text": "Don",
+                            "url": "https://lyna.netlify.app/taistudiodonate",
+                            "mode": "gold"
+                        }
+                    ]
                 }
             ]
         },
