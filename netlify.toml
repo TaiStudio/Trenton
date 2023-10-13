@@ -4,3 +4,9 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+[[redirects]]
+  from = "https://trenton.netlify.app/*"
+  to = "http://trenton.taistudio.fr/:splat"
+  status = 301
+  force = true
