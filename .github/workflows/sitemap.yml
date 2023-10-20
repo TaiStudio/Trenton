@@ -1,0 +1,68 @@
+name: Automatisation Sitemap
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout du code
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
+          fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
+
+
+      - name: Télécharger le repo sitemapGEN
+        run: git clone https://github.com/LeGitHubDeTai/sitemapGEN
+        
+      - name: Accéder au répertoire et installer les dépendances
+        working-directory: ./sitemapGEN
+        run: |
+            npm install
+            
+      - name: Exécuter npm start
+        working-directory: ./sitemapGEN
+        env:
+          SITE_OUT: ${{ secrets.SITE_OUT }}
+          INPUT_DIRECTORY: ${{ secrets.OUT }}
+        run: |
+            npm start
+            
+      - name: Supprime les sources
+        run: rm -rf ./sitemapGEN
+        
+      - name: Check for changes
+        id: git-check
+        run: |
+          if [[ -z "$(git status --porcelain)" ]]; then
+            echo "No changes to commit"
+            echo "changes=false" >> $GITHUB_ENV
+          else
+            echo "Changes detected"
+            echo "changes=true" >> $GITHUB_ENV
+          fi
+      
+      - name: Git User
+        run: git config --global user.name "${{ secrets.GIT_USER }}"
+  
+      - name: Git Email
+        run: |
+          EMAIL=$(echo "${{ secrets.GIT_EMAIL }}" | sed 's/\[AT\]/@/g')
+          git config --global user.email "$EMAIL"  
+          
+      - name: Commit and Push Changes
+        if: env.changes == 'true'
+        run: |
+            git add .
+            git commit -am "Automated"
+
+      - name: Push changes
+        if: env.changes == 'true'
+        uses: ad-m/github-push-action@master
+        with:
+            github_token: ${{ secrets.TOKEN }}
+            branch: ${{ github.ref }}
