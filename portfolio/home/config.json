@@ -1,6 +1,6 @@
 {
     "name": "Trenton",
-    "favicon": "https://trenton.taistudio.fr/logo512.png",
+    "favicon": "/logo512.png",
     "description": "ceci est un test",
     "template": "Aiden",
     "colors": [],
